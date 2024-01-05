@@ -1,0 +1,27 @@
+:root {
+    /*colors*/
+    --blue: #001F3F;
+    --light-blue: #00d5ff;
+    --orange: #FF851B;
+    --violet: #8A2BE24D;
+    
+    /*font*/
+    --font-family: "Raleway", "Arial", san-serif;
+    --font-size: 32px;
+
+    --border-radius: 5px;
+
+}
+
+.conteiner {
+    width: 1280px;
+
+}
+
+
+
+body {
+    width: 1920px;
+    margin: 0 auto;
+    background-color: var(--blue);
+}

@@ -9,7 +9,7 @@
     /*font*/
     --font-family: "Raleway", "Arial", san-serif;
     --font-size: 24px;
-
+    --font-size-h1:48px;
     --border-radius: 5px;
     --header-height: 118px;
 
@@ -18,12 +18,17 @@
 *,
 *::after,
 *::before {
+   
     box-sizing: border-box;
+}
+
+.cyan-text {
+    
+    color: var(--light-blue);
 }
 
 .container {
     width: 1280px;
-
 }
 
 
@@ -57,6 +62,7 @@ a:hover {
 /*page-header*/
 .page-header {
     border-bottom: 1px solid var(--color-text);
+    line-height: 28.18px;
 }
 
 .page-header__row {
@@ -69,6 +75,7 @@ a:hover {
 .page-header__nav {
     flex-grow: 1;
     margin-left: 60px;
+    
 }
 
 .page-header__menu {
@@ -77,4 +84,41 @@ a:hover {
     list-style: none;
     display: flex;
     gap: 60px;
+
+}
+
+.page-video__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    line-height: 0;
+}
+.page-video__content h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 400;
+    padding: 74px 0 60px 0;
+    margin: 0 auto;
+}
+.page-video__content h1 span {
+    font-family: 'Offside', sans-serif;
+    font-weight: 400;
+    color: var(--light-blue);
+}
+.page-project__stage {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, auto);
+}
+.page-project__stage h2 {
+    grid-column: span 12;
+}
+.stage-img {
+    grid-column: span 6;
+}
+.page-project__stage-description {
+    display: flex;
+    padding-left: 86px;
+    align-items: center;
+    grid-column: span 6;
+    font-size: 32px;
 }

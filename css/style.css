@@ -23,12 +23,12 @@
 }
 
 .cyan-text {
-    
     color: var(--light-blue);
 }
 
 .container {
     width: 1280px;
+    margin: 0 auto;
 }
 
 
@@ -52,10 +52,7 @@ a:hover {
     color: var(--orange);
 }
 /*layout*/
-.container {
-    width: 1010px;
-    margin: 0 auto;
-}
+
 
 
 
@@ -66,10 +63,14 @@ a:hover {
 }
 
 .page-header__row {
+    width: 913px;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    
+    
 }
 
 .page-header__nav {
@@ -93,13 +94,16 @@ a:hover {
     grid-template-rows: repeat(2, auto);
     line-height: 0;
 }
-.page-video__content h1 {
+.page-video__title {
+    display: flex;
+    justify-content: center;
     font-size: var(--font-size-h1);
     font-weight: 400;
-    padding: 74px 0 60px 0;
-    margin: 0 auto;
+    padding: 74px 30px 60px 30px;
+    
 }
-.page-video__content h1 span {
+
+.page-video__title span {
     font-family: 'Offside', sans-serif;
     font-weight: 400;
     color: var(--light-blue);
@@ -108,17 +112,23 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(8, auto);
+    margin: 0 auto;
 }
+.page-project__stage h1 {
+    margin:
+}
+
 .page-project__stage h2 {
     grid-column: span 12;
 }
 .stage-img {
-    grid-column: span 6;
+    grid-column: span 7;
 }
 .page-project__stage-description {
-    display: flex;
+    min-width: 150px;
     padding-left: 86px;
-    align-items: center;
-    grid-column: span 6;
+    grid-column: span 5;
+    font-size: 32px;
+    margin: auto auto;
     font-size: 32px;
 }

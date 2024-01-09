@@ -10,6 +10,7 @@
     --font-family: "Raleway", "Arial", san-serif;
     --font-size: 24px;
     --font-size-h1:48px;
+    --font-size-h2:40px;
     --border-radius: 5px;
     --header-height: 118px;
 
@@ -59,7 +60,7 @@ a:hover {
 /*page-header*/
 .page-header {
     border-bottom: 1px solid var(--color-text);
-    line-height: 28.18px;
+
 }
 
 .page-header__row {
@@ -75,7 +76,7 @@ a:hover {
 
 .page-header__nav {
     flex-grow: 1;
-    margin-left: 60px;
+    margin-left: 30px;
     
 }
 
@@ -100,13 +101,16 @@ a:hover {
     font-size: var(--font-size-h1);
     font-weight: 400;
     padding: 74px 30px 60px 30px;
+    line-height: 60px;
     
 }
 
-.page-video__title span {
+.loonGo {
     font-family: 'Offside', sans-serif;
     font-weight: 400;
     color: var(--light-blue);
+    margin-left:10px;
+    
 }
 .page-project__stage {
     display: grid;
@@ -114,11 +118,20 @@ a:hover {
     grid-template-rows: repeat(8, auto);
     margin: 0 auto;
 }
-.page-project__stage h1 {
-    margin:
+.page-project__container {
+    padding-top: 126px;
 }
-
-.page-project__stage h2 {
+.page-project__title {
+    padding: 0 431px;
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    color: var(--light-blue);
+}
+.page-project__stage-title {
+    font-size: var(--font-size-h2);
+    padding: 80px 0 112px 0;
     grid-column: span 12;
 }
 .stage-img {

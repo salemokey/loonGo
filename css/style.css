@@ -26,6 +26,9 @@
 .cyan-text {
     color: var(--light-blue);
 }
+.orange-text{
+    color: var(--orange);
+}
 
 .container {
     width: 1280px;
@@ -114,15 +117,18 @@ a:hover {
 }
 .page-project__stage {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, auto);
-    margin: 0 auto;
+    grid-template-columns: repeat(12, 85px);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
 }
 .page-project__container {
-    padding-top: 126px;
+    
+    padding-top:126px;
+    /* margin: 0 auto; */
+    
 }
 .page-project__title {
-    padding: 0 431px;
+    
     display: flex;
     justify-content: center;
     font-size: var(--font-size-h2);
@@ -133,6 +139,7 @@ a:hover {
     font-size: var(--font-size-h2);
     padding: 80px 0 112px 0;
     grid-column: span 12;
+    font-weight: 500;
 }
 .stage-img {
     grid-column: span 7;
@@ -144,4 +151,8 @@ a:hover {
     font-size: 32px;
     margin: auto auto;
     font-size: 32px;
+}
+.page-project__stage-rocket {
+    margin:36px 0 0 606px;
+
 }

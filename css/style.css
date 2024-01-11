@@ -37,7 +37,7 @@
 
 
 body {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
     background-color: var(--blue);
     font-family: var(--font-family);
@@ -115,47 +115,75 @@ a:hover {
     margin-left:10px;
     
 }
-.page-project__stage {
-    display: grid;
-    grid-template-columns: repeat(12, 85px);
-    grid-template-rows: repeat(3, auto);
-    justify-content: center;
-}
 .page-project__container {
-    
-    padding-top:126px;
+    margin-top:126px;
     /* margin: 0 auto; */
     
 }
 .page-project__title {
-    
     display: flex;
     justify-content: center;
     font-size: var(--font-size-h2);
     font-weight: 500;
     color: var(--light-blue);
 }
-.page-project__stage-title {
+.page-project__stage {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(12, 85px);
+    grid-template-rows: repeat(6, auto);
+    justify-content: center;
+    align-items: stretch;
+}
+.page-project__stage-title--left {
+    padding:26px 0 0 16px;
+    height: 112px;
+    grid-column: 1 / span 12;
     font-size: var(--font-size-h2);
-    padding: 80px 0 112px 0;
-    grid-column: span 12;
     font-weight: 500;
+    line-height: normal;
+    place-self:end start;
 }
-.stage-img {
-    grid-column: span 7;
+.stage-img--left{
+    grid-column: 1 / span 7;
+    padding-top: 112px;
 }
-.page-project__stage-description {
+.page-project__stage-description--left {
+    grid-column: 9 / span 4;
     min-width: 150px;
-    padding-left: 86px;
-    grid-column: span 5;
     font-size: 32px;
-    margin: auto auto;
-    font-size: 32px;
+    align-self: center;
+    
 }
-.page-project__stage-rocket {
-    margin:36px 0 0 606px;
+.page-project__stage-rocket--left {
+    grid-column: 8;
+    margin:20px 0 0 12px;
+    transform: scale(-1, 1);
+}
 
+
+.page-project__stage-title--right {
+    grid-column: 1 / span 12;
+    padding: 81px 16px 0 0;
+    min-height: 112px;
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+    line-height: normal;
+    place-self:start end;
 }
-.right {
+.stage-img--right{
+    padding-top: 112px;
+    grid-column: 6 / span 7;
+}
+.page-project__stage-description--right {
+    min-width: 150px;
+    grid-column: span 4;
+    font-size: 32px;
+    align-self: center;
+}
+.page-project__stage-rocket--right {
+    grid-column: 5;
     justify-self: end;
+    margin:20px 12px 0 0;
+    
 }

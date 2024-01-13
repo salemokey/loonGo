@@ -205,3 +205,20 @@ a:hover {
     padding:20px 12px 0 0;
     
 }
+.page-map {
+    margin-top: 112px;
+}
+.page-map__content {
+    display: grid;
+    grid-template-columns: repeat (12, 85px);
+    grid-template-rows: repeat (5, 112px);
+    justify-content: center;
+}
+.page-map__title {
+    grid-column: span 12;
+
+}
+.page-map__stage {
+    grid-column: span 6;
+    grid-row: span 4;
+}

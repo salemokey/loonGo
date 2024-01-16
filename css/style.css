@@ -20,6 +20,7 @@
     --box-shadow: 0px 0px 40px 10px rgba(255, 133, 27, 0.40), 4px 4px 5px 0px rgba(0, 0, 0, 0.30), 0px 4px 0px 0px rgba(0, 0, 0, 0.30);
     --border-radius: 5px;
     --box-shadow-white: 0px 0px 20px 10px rgba(243, 237, 233, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.30), 0px 4px 0px 0px rgba(0, 0, 0, 0.30);
+    --box-shadow-black: 0px 0px 40px 30px rgba(0, 0, 0, 0.30), 4px 4px 5px 0px rgba(0, 0, 0, 0.30), 0px 4px 0px 0px rgba(0, 0, 0, 0.30); 
 }
 /*global*/
 *,
@@ -270,19 +271,31 @@ a:hover {
 .page-map__stage-img--three {
     background: url(../img/map-stage-img--three.jpg) no-repeat center/110%;
 }
-
+.page-map__stage-img--four {
+    background: url(../img/map-stage-img--four.jpg) no-repeat center/120%;
+}
+.page-map__stage-img--five {
+    background: url(../img/map-stage-img--five.jpg) no-repeat center/110%;
+}
+.page-map__stage-img--six {
+    background: url(../img/map-stage-img--six.jpg) no-repeat center/110%;
+}
 .page-map__stage-desc-list {
     grid-row: 2 / span 3;
     grid-column: span 2;
     line-height: normal;
     font-size: 16px;
+    align-self: center;
+    height: 280px;
+    width: 150px;
  
 }
 .list-desc {
-    padding: 10px 20px;
+    margin: 0;
+    padding: 0 20px;
 }
 .page-map__stage-desc-list ul li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 } 
 .page-map__transition {
     grid-row: span 4;
@@ -295,4 +308,40 @@ a:hover {
     grid-column: 1 / span 6;
     transform: scale(-1, 1);
 }
-
+.page-partners{
+    margin-top: 112px;
+    
+}
+.page-partners__box {
+    width: 1020px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(10, auto);
+    column-gap: 47px;
+    row-gap: 15px;
+    justify-items: center;
+}
+.page-partners__box-title {
+    grid-column: span 3;
+    height: 112px;
+    align-self: end;
+    font-size: var(--font-size-h2);
+    color: var(--light-blue);
+}
+.page-partners__box-cell {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 250px;
+    width: 308px;
+    background-color: var(--orange);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow-black);
+    
+    
+}
+.partners-img {
+    height: 218px;
+    width: 278px;
+}

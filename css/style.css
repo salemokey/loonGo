@@ -129,6 +129,7 @@ a:hover {
 }
 .page-project {
     padding:112px;
+    
 }
 
 .page-project__title {
@@ -352,7 +353,7 @@ a:hover {
     width: 278px;
 }
 .page-reviews{
-    margin-top: 112px;
+
 }
 .page-reviews__box {
     width: 1020px;

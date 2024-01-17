@@ -103,7 +103,9 @@ a:hover {
     gap: 60px;
 
 }
-
+.page-video {
+    padding: 74px;
+}
 .page-video__content {
     display: grid;
     grid-template-columns: 1fr;
@@ -113,9 +115,11 @@ a:hover {
 .page-video__title {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: var(--font-size-h1);
     font-weight: 400;
-    padding: 74px 30px 60px 30px;
+    min-height: 66px;
+    margin-bottom: 58px;
     line-height: 60px;
     
 }
@@ -128,7 +132,9 @@ a:hover {
     
 }
 .page-project {
-    padding:112px;
+    padding: 66px;px;
+    box-shadow: var(--box-shadow-inset);
+    background-color: var(--dark-blue);
     
 }
 
@@ -214,7 +220,7 @@ a:hover {
     
 }
 .page-map {
-    padding:112px;
+    padding: 66px;px;
 }
 .page-map__content {
  
@@ -314,7 +320,7 @@ a:hover {
     transform: scale(-1, 1);
 }
 .page-partners{
-    padding:112px;
+    padding: 66px;px ;
     background-color: var(--dark-blue);
     box-shadow: var(--box-shadow-inset);
     
@@ -353,7 +359,7 @@ a:hover {
     width: 278px;
 }
 .page-reviews{
-    padding:112px;
+    padding: 66px;px;
 } 
 .page-reviews__box {
     width: 1020px;

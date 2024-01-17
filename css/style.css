@@ -24,6 +24,7 @@
     --box-shadow-white: 0px 0px 20px 10px rgba(243, 237, 233, 0.4), 4px 4px 5px 0px rgba(0, 0, 0, 0.30), 0px 4px 0px 0px rgba(0, 0, 0, 0.30);
     --box-shadow-black: 0px 0px 40px 30px rgba(0, 0, 0, 0.30), 4px 4px 5px 0px rgba(0, 0, 0, 0.30), 0px 4px 0px 0px rgba(0, 0, 0, 0.30);
     --box-shadow-reviews: 0px 4px 50px 2px rgba(221, 221, 221, 0.70);
+    --box-shadow-inset: inset 0px 0px 20px 10px rgba(0,0,0,0.6);
     
 }
 /*global*/
@@ -126,11 +127,10 @@ a:hover {
     margin-left:10px;
     
 }
-.page-project__container {
-    margin-top: 126px;
-
-    
+.page-project {
+    padding:112px;
 }
+
 .page-project__title {
     display: flex;
     justify-content: center;
@@ -213,7 +213,7 @@ a:hover {
     
 }
 .page-map {
-    margin-top: 112px;
+    padding:112px;
 }
 .page-map__content {
  
@@ -313,7 +313,9 @@ a:hover {
     transform: scale(-1, 1);
 }
 .page-partners{
-    margin-top: 112px;
+    padding:112px;
+    background-color: var(--dark-blue);
+    box-shadow: var(--box-shadow-inset);
     
 }
 .page-partners__box {

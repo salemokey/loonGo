@@ -74,6 +74,23 @@
             </div>
                 </div>
     </section>
+    <!-- form telegram -->
+    <div class="form_to_us"  id="form_to_us">
+        <div class="title-form">
+            <span class="form__text">Оставьте заявку</span>
+        </div>
+        <form class="consultation__form" action="send.php" action='post'>
+            <input type="text" name="name" placeholder="Ваше имя*" class="box_A" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон*" class="box_A" required>
+            <textarea name="question" placeholder="Сообщение" class="box_A box-text" required></textarea>
+            <input type="submit" value="Оставить заявку" class="box_A box-btn">
+        </form>
+    </div>
+    <!-- form telegram -->
+
+    <!-- form telegram-JS -->
+    
+     <!-- form telegram-JS-end -->
      <!--our-team-block-end -->
   
     <!-- footer -->
@@ -96,4 +113,29 @@
 </footer>
     <!-- footer-end -->
 </body>
+<script>
+    window.onload=function(){
+        const siteForm = document.querySelector('.consultation__form');
+        if (siteForm) {
+            siteForm.addEventListener('submit',async (e) => {
+                e.preventDefault();
+                const item = e.target;
+                const submitBtn =  item.querySelector('input[type=submit]');
+                submitBtn.setAttribute('disabled', 'true');
+        
+                let response = await fetch('/send.php', {
+                    method: 'POST',
+                    body: new FormData(item)
+                })
+                    .then(data => {
+                        item.reset();
+                    })
+                    .catch((error) => console.log("ошибка!", error))
+                    .finally(() => {
+                        submitBtn.removeAttribute('disabled');
+                    });
+            });
+        };
+    };
+</script>
 </html>

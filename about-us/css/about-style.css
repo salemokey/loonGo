@@ -3,8 +3,11 @@
 }
 /* friends */
 .friends__content{
+    margin-top: 20px;
     width: 100%;
     position: relative;
+    box-shadow: var(--box-shadow);
+    
 }
 .friends__first-block {
     background: url('../img/background/pic_1.png') no-repeat center center;

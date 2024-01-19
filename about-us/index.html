@@ -23,8 +23,8 @@
                 <nav class="page-header__nav">
                     <ul class="page-header__menu">
                         <li><a href="#">Проекты</a></li>
-                        <li><a href="./about-us/index.html">О нас</a></li>
-                        <li><a href="#">Оставить заявку</a></li>
+                        <li><a href="#page-header">О нас</a></li>
+                        <li><a href="#form_to_us">Оставить заявку</a></li>
                     </ul>
                 </nav>
                 <a href="" class="page-header__contacts">Контакты</a>
@@ -138,4 +138,24 @@
         };
     };
 </script>
+<script>
+var prevScrollpos = window.pageYOffset;
+
+window.addEventListener("scroll", function() {
+  var currentScrollPos = window.pageYOffset;
+
+  // Скрывать элемент с классом "page-header" при прокрутке вниз
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".page-header").style.opacity = "1";
+    document.querySelector(".page-header").style.pointerEvents = "auto";
+  } else {
+    // Показывать элемент с классом "page-header" при прокрутке вверх
+    document.querySelector(".page-header").style.opacity = "0";
+    document.querySelector(".page-header").style.pointerEvents = "none";
+  }
+
+  prevScrollpos = currentScrollPos;
+});
+    </script>
+
 </html>

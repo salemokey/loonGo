@@ -201,4 +201,23 @@
     </div>
 </footer>
 </body>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    
+    window.addEventListener("scroll", function() {
+      var currentScrollPos = window.pageYOffset;
+    
+      // Скрывать элемент с классом "page-header" при прокрутке вниз
+      if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".page-header").style.opacity = "1";
+        document.querySelector(".page-header").style.pointerEvents = "auto";
+      } else {
+        // Показывать элемент с классом "page-header" при прокрутке вверх
+        document.querySelector(".page-header").style.opacity = "0";
+        document.querySelector(".page-header").style.pointerEvents = "none";
+      }
+    
+      prevScrollpos = currentScrollPos;
+    });
+        </script>
 </html>

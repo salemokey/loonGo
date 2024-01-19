@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Offside&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    
     <title>loonGo</title>
 
 </head>
@@ -20,12 +21,12 @@
                     <img src="./img/logo.svg" alt="loonGo" class="page-header__logo" width="160" height="106">
                     <nav class="page-header__nav">
                         <ul class="page-header__menu">
-                            <li><a href="#">Проекты</a></li>
-                            <li><a href="./about-us/index.html">О нас</a></li>
-                            <li><a href="#">Оставить заявку</a></li>
+                            <li><a href="projects/index.html">Проекты</a></li>
+                            <li><a href="about-us/index.html">О нас</a></li>
+                            <li><a href="#form_to_us">Оставить заявку</a></li>
                         </ul>
                     </nav>
-                    <a href="" class="page-header__contacts">Контакты</a>
+                    <a href="#footer" class="page-header__contacts">Контакты</a>
                 </div>
             </div>
     </header>
@@ -183,23 +184,46 @@
             </div>
         </div>
     </section>
-    <footer class="page-footer">
-        <div class="container">
-            <div class="page-footer__box">
-        <div class="copyright">
-            © 2017-2024. Все права защищены. Использование материалов с сайта без разрешения запрещено!
-        </div>     
-        <div class="footer__link">
-            <a href="https://telegram.me/share/url?url=ВАШ_URL&text=ТЕКСТ" class="footer__link-img tg">
-                <img src="./img/footer/telegram-lg.svg" alt="telegram">
-            </a>
-            <a href="https://vk.com/" class="footer__link-img vk">
-                <img src="./img/footer/vk-lg.svg" alt="vk">
-            </a>
+    <!-- form telegram -->
+    <div class="form_to_us"  id="form_to_us">
+        <div class="title-form">
+            <span class="form__text">Оставьте заявку</span>
         </div>
+        <form class="consultation__form" action="send.php" action='post'>
+            <input type="text" name="name" placeholder="Ваше имя*" class="box_A" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон*" class="box_A" required>
+            <textarea name="question" placeholder="Сообщение" class="box_A box-text" required></textarea>
+            <input type="submit" value="Оставить заявку" class="box_A box-btn">
+        </form>
     </div>
-    </div>
-</footer>
+    <!-- form telegram -->
+    <footer class="footer" id="footer">
+        <div class="footer_cont">
+            <div class="copyright_1 cont1">
+                <span>© 2017-2024. </span>
+            </div>
+            <div class="copyright_2 cont2">
+                <span>Все права защищены. <br>Использование материалов с <br>сайта без разрешения <br>запрещено!</span>
+            </div>
+            <div class="contacts_1 cont3">
+                <span>Контакты</span>
+            </div>
+            <div class="contacts_2 cont4">
+                <span>+79374782874<br>Россия, 169378, <br>г. Нижний Новгород <br>Набержная Федоровского 1</span>
+            </div>
+            <div class="footer__link-text cont5">
+                <span>Соцсети и мессенджеры</span>
+            </div>      
+            <div class="footer__link cont6">
+                <a href="https://telegram.me/share/url?url=ВАШ_URL&text=ТЕКСТ" class="footer__link-img tg">
+                    <img src="./img/footer/telegram_f.png" width="40" height="40" alt="telegram">
+                </a>
+                <a href="https://vk.com/" class="footer__link-img vk">
+                    <img src="./img/footer/vk__f.png" width="40" height="40" alt="vk">
+                </a>
+            </div>
+        </div>    
+    </footer>
 </body>
 <script>
     var prevScrollpos = window.pageYOffset;
